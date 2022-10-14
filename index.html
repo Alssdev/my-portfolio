@@ -6,25 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles.css">
+  <script src="./navbar.js" defer></script>
 
   <title>alssdev</title>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar flex">
     <div class="brand">
       <p>Alssdev</p>
     </div>
-    <div class="menu">
-      <!-- <label for="navbarBurger">&#9776;</label>
-      <input type="checkbox" id="navbarBurger"> -->
-      <ul class="end">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#services">Qué hago</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+
+    <button 
+      id="navbar-toggle" 
+      class="navbar-toggle" 
+      aria-controls="navbar-menu" 
+      aria-expanded="false">
+    </button>
+
+      <ul id="navbar-menu" data-visible="false" class="menu-end flex">
+        <li><a class="uppercase" href="#home">Home</a></li>
+        <li><a class="uppercase" href="#about">Sobre mi</a></li>
+        <li><a class="uppercase" href="#services">Qué hago</a></li>
+        <li><a class="uppercase" href="#projects">Proyectos</a></li>
+        <li><a class="uppercase" href="#contact">Contacto</a></li>
       </ul>
-    </div>
   </nav>
+
+  <section>
+    <img src="./assets/img/xd.png" style="max-width: 100%;" alt="">
+  </section>
 </body>
 </html>
