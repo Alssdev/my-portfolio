@@ -5,8 +5,6 @@
   url('./assets/fonts/Montserrat-ExtraLight.ttf') font-weight(200);
 }
 
-/* Navbar */
-/* =================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +18,15 @@
 
 .flex {
   display: flex;
-  gap: var(--gap, 2.8rem)
+  gap: var(--gap, 2.8rem);
 }
 
+.text-extra-light {
+  font-weight: 200;
+}
+
+/* Navbar */
+/* =================================================================== */
 .navbar {
   font-family: 'Montserrat';
   font-weight: 300;
@@ -134,4 +138,44 @@
     font-size: 16px;
   }
 }
+/* =================================================================== */
+
+/* hero */
+/* =================================================================== */
+
+.hero {
+  font-family: 'Montserrat';
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url('./assets/img/hero.jpg');
+  height: 668px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero .text-extra-light {
+  font-size: 35px;
+  line-height: 43px;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    font-size: 50px;
+  }
+  
+  .hero .text-extra-light {
+    font-size: 35px;
+  }
+}
+
 /* =================================================================== */
